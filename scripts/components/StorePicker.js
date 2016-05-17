@@ -1,12 +1,12 @@
 import React from 'react';
-import { Navigation } from 'react-router';
+import { History } from 'react-router';
 import h from '../helpers'
 import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 //
 @autobind
 class StorePicker extends React.Component {
-  // mixins : [Navigation],
+  // mixins : [History],
   goToStore(event) {
     event.preventDefault();
     // get the data from the input
