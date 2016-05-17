@@ -2,7 +2,9 @@ import React from 'react';
 import { Navigation } from 'react-router';
 import h from '../helpers'
 import reactMixin from 'react-mixin';
-
+import autobind from 'autobind-decorator';
+//
+@autobind
 class StorePicker extends React.Component {
   // mixins : [Navigation],
   goToStore(event) {
@@ -23,7 +25,6 @@ class StorePicker extends React.Component {
   }
 }
 
-reactMixin.onClass(StorePicker, Navigation);
-
+reactMixin.onClass(StorePicker, History);
 
 export default StorePicker;
